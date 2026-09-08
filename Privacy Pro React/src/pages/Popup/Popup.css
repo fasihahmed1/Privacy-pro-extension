@@ -1,0 +1,318 @@
+/* Main container */
+.popup-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  ::selection {
+    background-color: #ffcc00; /* Change this to your desired highlight color */
+    color: #000; /* Change this to your desired text color */
+  }
+  
+  /* For WebKit browsers (like Chrome and Safari), use this for broader compatibility */
+  ::-moz-selection {
+    background-color: #ffcc00; /* Same color as above */
+    color: #000; /* Same text color as above */
+  }
+}
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+
+/* Settings Icon */
+.settings-icon {
+  width: 35%;
+  height: 9%;
+  margin-left: 240px;
+  margin-top: -10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.settings-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Dropdown Menu */
+/* Dropdown Menu */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: 170px; /* Move dropdown to the left by 10px */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 120px;
+  padding: 0;
+  z-index: 100;
+}
+
+
+/* Dropdown Item Styling */
+.dropdown-menu div {
+  cursor: pointer;
+  padding: 8px ;
+  text-align: center;
+  font-size: 14px; /* Smaller font size */
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu div:hover {
+  background-color: #4CAF50; /* Attractive hover color */
+  color: white;
+}
+
+/* Centered image */
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.center-image img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Display Area Styling */
+.display-area {
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tab-content {
+  text-align: center;
+  color: #333;
+}
+/* Toggle Button */
+.toggle-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* When the button is active (On) */
+.toggle-button.active {
+  background-color: #4CAF50; /* Green when ON */
+  color: white;
+}
+
+/* When the button is inactive (Off) */
+.toggle-button.inactive {
+  background-color: red; /* Red when OFF */
+  color: white;
+}
+
+.toggle-button.active:hover {
+  background-color: #51874c;
+}
+.toggle-button.inactive:hover {
+  background-color: #da3535;
+}
+
+
+                      /* < tabs css > */
+
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 100px;
+
+  }
+  
+  .input-section {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-section {
+    margin-bottom: 10px;
+    
+  }
+  
+  .input-section input {
+    padding: 8px;
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .button-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-section button:hover {
+    background-color: #45a049;
+  }
+  
+  .checkbox-section label {
+    font-size: 20px;
+  }
+                     /* <sites css> */
+.sites-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    width: 100%; /* Ensure the container takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 50px; /* Adjust bottom margin for spacing */
+  }
+  
+  .input-field {
+    padding: 8px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+    .sites-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      
+      .checkbox-group {
+        margin-bottom: 10px;
+      }
+      
+      .checkbox-group label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      
+      .apply-button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .apply-button:hover {
+        background-color: #45a049;
+      }
+      
+  }
+  
+  .checkbox-group {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Space between checkboxes and apply button */
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .checkbox-group label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px; 
+  }
+  
+  .apply-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .apply-button:hover {
+    background-color: #45a049;
+  }
+              /* <urls css> */
+
+/* urls.css */
+.url-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.url-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+
+
+.url-button {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 0;
+  font-size: 18px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.url-button:hover {
+  background-color: #45a049;
+}
